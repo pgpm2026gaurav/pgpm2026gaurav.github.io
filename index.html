@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0d0c">
+  <meta name="description" content="Gaurav Mishra builds AI systems that connect ambitious ideas to verifiable, usable products.">
+  <title>Gaurav Mishra — AI Systems Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0d0c'/%3E%3Cpath d='M8 10h16M8 16h10M8 22h16' stroke='%23c7ff4a' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='23' cy='16' r='2' fill='%23c7ff4a'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#0a0d0c;--paper:#eff2e9;--acid:#c7ff4a;--cyan:#61e8ff;--muted:#aeb6aa;--line:rgba(239,242,233,.16);--soft:rgba(239,242,233,.07)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:Manrope,system-ui,sans-serif;font-size:16px;line-height:1.55;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--acid);color:var(--ink)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+    .shell{width:min(1180px,calc(100% - 40px));margin:auto}.mono{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.09em;font-size:.75rem}.eyebrow{color:var(--acid);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:24px;height:1px;background:currentColor}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:2}.mark{font-weight:700;letter-spacing:-.03em}.mark span{color:var(--acid)}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:.9rem}.navlinks a:hover,.navlinks a:focus-visible{color:var(--paper)}
+    .hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center;padding:90px 0 72px;position:relative}.hero h1{font-size:clamp(3.5rem,8.6vw,8rem);line-height:.87;letter-spacing:-.075em;margin:22px 0 30px;font-weight:600;max-width:900px}.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1px var(--paper)}.hero-copy{max-width:650px;color:#cbd1c7;font-size:clamp(1.08rem,1.7vw,1.35rem)}.hero-copy strong{color:var(--paper);font-weight:600}.hero-actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border:1px solid var(--paper);border-radius:2px;font-weight:600}.button.primary{background:var(--acid);color:var(--ink);border-color:var(--acid)}.button:hover{transform:translateY(-2px)}
+    .signal{border:1px solid var(--line);background:rgba(255,255,255,.025);padding:28px;position:relative}.signal:before{content:"";position:absolute;width:60px;height:60px;right:-1px;top:-1px;border-top:1px solid var(--acid);border-right:1px solid var(--acid)}.signal-title{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:4px}.pulse{width:8px;height:8px;border-radius:50%;background:var(--acid);box-shadow:0 0 16px var(--acid);margin-top:5px}.signal-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}.signal-row:last-child{border:0}.signal-row span{color:var(--muted)}.signal-row b{font-family:"DM Mono";font-weight:400;font-size:.78rem;color:var(--paper);text-align:right}
+    section{padding:110px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;margin-bottom:58px}.section-head h2{font-size:clamp(2.3rem,5vw,4.5rem);letter-spacing:-.055em;line-height:.98;margin:14px 0 0;font-weight:600}.section-head p{max-width:630px;margin:12px 0 0;color:var(--muted);font-size:1.08rem}
+    .atlas{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(120px,auto);gap:12px}.node{border:1px solid var(--line);background:var(--soft);padding:22px;position:relative;overflow:hidden;transition:.25s ease}.node:hover{border-color:rgba(199,255,74,.55);background:rgba(199,255,74,.055)}.node h3{margin:0 0 8px;font-size:1.1rem}.node p{margin:0;color:var(--muted);font-size:.9rem}.node .num{position:absolute;right:18px;top:16px;color:#556057;font-family:"DM Mono";font-size:.72rem}.n1{grid-column:span 5;grid-row:span 2}.n2{grid-column:span 3}.n3{grid-column:span 4}.n4{grid-column:span 3}.n5{grid-column:span 4}.n6{grid-column:span 5}.n7{grid-column:span 7}.n1:after{content:"AI";font-size:9rem;font-weight:700;letter-spacing:-.1em;color:rgba(199,255,74,.08);position:absolute;right:12px;bottom:-52px}.tagline{margin-top:42px;color:var(--cyan);font-family:"DM Mono";font-size:.78rem;letter-spacing:.04em}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}.filter{border:1px solid var(--line);color:var(--muted);background:transparent;padding:9px 14px;border-radius:999px;cursor:pointer}.filter:hover,.filter.active,.filter:focus-visible{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.project{border:1px solid var(--line);padding:28px 28px 68px;background:linear-gradient(135deg,rgba(255,255,255,.045),rgba(255,255,255,.015));min-height:380px;display:flex;flex-direction:column;transition:.25s ease;position:relative}.project:after{content:"Open detailed case study →";position:absolute;left:28px;bottom:24px;color:var(--acid);font-family:"DM Mono",monospace;font-size:.72rem;letter-spacing:.04em}.project:hover{transform:translateY(-3px);border-color:rgba(199,255,74,.55)}.project:focus-within{outline:2px solid var(--acid);outline-offset:3px}.project-top{display:flex;justify-content:space-between;align-items:start;gap:16px}.status{font-family:"DM Mono";font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border:1px solid var(--line);color:var(--acid);white-space:nowrap}.status.partial{color:#ffd36a}.project h3{font-size:1.7rem;letter-spacing:-.035em;margin:24px 0 12px}.project h3 a:after{content:"";position:absolute;inset:0}.project h3 a:focus{outline:0}.project h3 a span{color:var(--acid);font-size:1.05rem;margin-left:8px}.project>p{color:var(--muted);margin:0 0 24px}.evidence{margin-top:auto;border-top:1px solid var(--line);padding-top:18px}.evidence b{font-size:.8rem}.evidence p{font-family:"DM Mono";font-size:.72rem;color:#aeb6aa;margin:7px 0 0;line-height:1.65}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.chip{font-size:.72rem;border:1px solid var(--line);padding:5px 8px;color:#c5ccc2}.project[hidden]{display:none}
+    .method{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.step{padding:26px;border-right:1px solid var(--line)}.step:last-child{border:0}.step .mono{color:var(--acid)}.step h3{font-size:1.15rem;margin:42px 0 10px}.step p{color:var(--muted);font-size:.9rem;margin:0}.method-reflection{max-width:900px;margin:34px 0 0;color:var(--muted);font-size:1.05rem}.method-reflection .mono{display:block;color:var(--cyan);margin-bottom:10px}.belief{font-size:clamp(2rem,5vw,4.4rem);line-height:1.08;letter-spacing:-.05em;max-width:1080px;margin:0}.belief span{color:var(--acid)}
+    .footer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end}.footer-grid p{color:var(--muted);max-width:610px}.footnote{border-left:1px solid var(--acid);padding-left:20px}.copyright{display:flex;justify-content:space-between;color:#717b73;border-top:1px solid var(--line);padding:26px 0 38px;margin-top:70px;font-size:.78rem}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:48px;min-height:auto}.hero h1{font-size:clamp(3.5rem,16vw,6rem)}.section-head{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.method{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.atlas{grid-template-columns:1fr 1fr}.node{grid-column:span 1!important;grid-row:span 1!important}.n1{min-height:240px}.footer-grid{grid-template-columns:1fr}.navlinks a:nth-child(2){display:none}}
+    @media(max-width:560px){.shell{width:min(100% - 24px,1180px)}nav{height:66px}.navlinks{gap:14px}.hero{padding:66px 0}.hero h1{font-size:3.6rem}.signal{padding:20px}section{padding:80px 0}.atlas{grid-template-columns:1fr}.method{grid-template-columns:1fr}.step{border-right:0!important;border-bottom:1px solid var(--line)!important}.step:last-child{border-bottom:0!important}.project{padding:22px}.copyright{flex-direction:column;gap:8px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.node,.project{transition:none}}
+    .story-feature{display:grid;grid-template-columns:1.15fr .85fr;gap:56px}.story-feature h3{font-size:clamp(1.9rem,3.5vw,3rem);line-height:1.1;letter-spacing:-.04em;margin:20px 0}.story-feature p{color:var(--muted);font-size:1.05rem}.story-feature .button{margin-top:20px}.story-label{color:var(--cyan)}.story-aside{padding:32px;background:rgba(199,255,74,.055);border-top:2px solid var(--acid)}.story-aside>.mono{color:var(--acid);line-height:1.8}.story-aside h3{font-size:1.8rem}.story-aside .source-note{font-size:.85rem;line-height:1.6;border-top:1px solid var(--line);padding-top:18px}.press-strip{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}.press-strip>span{color:var(--muted)}.press-strip a{font-weight:600}.press-strip a:hover{color:var(--acid)}.personal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.personal-grid article{border-top:1px solid var(--line);padding-top:24px}.personal-grid .mono{color:var(--cyan)}.personal-grid h3{font-size:1.3rem;line-height:1.25;letter-spacing:-.025em}.personal-grid p{color:var(--muted);font-size:1rem}a:focus-visible{outline:2px solid var(--acid);outline-offset:5px}
+    @media(max-width:850px){.story-feature{grid-template-columns:1fr;gap:32px}.personal-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.personal-grid{grid-template-columns:1fr}.story-aside{padding:24px}.navlinks{font-size:.8rem;gap:12px}.press-strip{gap:18px}}
+    .knowledge-section,.personal-section{padding:30px 0}.secondary-details summary{cursor:pointer;font-size:1rem;color:var(--muted);padding:14px 0}.secondary-details summary:hover,.secondary-details summary:focus-visible{color:var(--acid)}.secondary-details[open]>summary{margin-bottom:32px}.personal-intro{color:var(--muted);max-width:760px;margin-bottom:32px}.personal-intro a{text-decoration:underline;text-underline-offset:4px}.career-results{margin:24px 0}.career-results>div{padding:20px 0;border-top:1px solid var(--line)}.career-results dt{font-size:1.8rem;line-height:1.2;color:var(--acid);font-weight:600}.career-results dd{margin:10px 0 0;color:var(--muted);font-size:1rem}.hero{min-height:auto;padding:80px 0}.hero h1{font-size:clamp(3.5rem,7.6vw,7rem)}
+    .hero-aside{margin:26px 0 0;max-width:610px;border-left:2px solid var(--cyan);padding:4px 0 4px 16px}.hero-aside a{display:block;text-decoration:none}.hero-aside strong{display:block;color:var(--paper);font-size:clamp(1.05rem,1.5vw,1.22rem);line-height:1.45;letter-spacing:-.01em}.hero-aside span{display:block;color:var(--cyan);font-size:.82rem;margin-top:5px}.hero-aside a:hover strong{color:var(--acid)}
+    @media(max-width:850px){.navlinks a:nth-child(2){display:inline}.navlinks{gap:16px}}@media(max-width:560px){.hero{padding:56px 0}.navlinks{gap:12px;font-size:.78rem}.hero h1{font-size:3.6rem}}
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <nav aria-label="Primary navigation">
+      <a class="mark" href="#top">GM<span>/AI</span></a>
+      <div class="navlinks"><a href="#work">AI projects</a><a href="#story">Achievements</a><a href="#method">Method</a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="shell hero">
+      <div>
+        <div class="eyebrow mono">AI systems builder · product thinker</div>
+        <h1>I turn <em>ambition</em> into evidence.</h1>
+        <p class="hero-copy">I’m <strong>Gaurav Mishra</strong>. I use AI, prompts, and fast iterative coding to become more capable across three real parts of life: technical craft, financial decision-making, and everyday health—then test the assumptions most prototypes hide.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore AI projects</a><a class="button" href="#story">Professional achievements</a></div>
+        <p class="hero-aside"><a href="story-goldman-sachs.html"><strong>Call from David Solomon: CEO, Goldman Sachs and a Tomorrowland Invitation</strong><span>Read the unexpected story ↗</span></a></p>
+      </div>
+      <aside class="signal" aria-label="Portfolio snapshot">
+        <div class="signal-title"><span class="mono">Work at a glance</span></div>
+        <div class="signal-row"><span>AI portfolio</span><b>10 project case studies</b></div>
+        <div class="signal-row"><span>Goldman Sachs</span><b>2019–2025</b></div>
+        <div class="signal-row"><span>Fraud escalation</span><b>$5.4M recovered</b></div>
+        <div class="signal-row"><span>Why I build AI</span><b>Technical · Financial · Health</b></div>
+      </aside>
+    </div>
+
+    <section class="knowledge-section">
+      <div class="shell">
+        <details class="secondary-details"><summary>Explore the AI skills behind the projects</summary>
+        <div class="section-head">
+          <div><div class="eyebrow mono">Knowledge atlas</div><h2>Width with a spine.</h2></div>
+          <p>The projects span domains, but the underlying practice stays coherent: frame the decision, design the human workflow, build the smallest real system, and create evidence that can disprove the original idea.</p>
+        </div>
+        <div class="atlas" aria-label="AI knowledge areas">
+          <article class="node n1"><span class="num">01</span><h3>Applied AI product design</h3><p>Turning ambiguous intent into usable workflows, interfaces, and operating boundaries.</p></article>
+          <article class="node n2"><span class="num">02</span><h3>Prompt systems</h3><p>Portable protocols, model handoffs, planning, and evaluation.</p></article>
+          <article class="node n3"><span class="num">03</span><h3>Local AI</h3><p>Ollama, privacy-aware inference, offline-capable product loops.</p></article>
+          <article class="node n4"><span class="num">04</span><h3>Evidence & RAG</h3><p>Provenance, retrieval, contradiction checks, grounded outputs.</p></article>
+          <article class="node n5"><span class="num">05</span><h3>Agentic workflows</h3><p>Tool use, safe actions, deterministic validation, continuity.</p></article>
+          <article class="node n6"><span class="num">06</span><h3>Reliability engineering</h3><p>Telemetry, failure modes, schedulers, backfills, acceptance criteria.</p></article>
+          <article class="node n7"><span class="num">07</span><h3>Vibe coding—with judgment</h3><p>Move from idea to working software quickly, while keeping architecture, testing, privacy, and claims honest.</p></article>
+        </div>
+        <p class="tagline">// breadth is useful only when the reasoning transfers between domains</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="shell">
+        <div class="section-head">
+          <div><div class="eyebrow mono">Selected systems</div><h2>Built, tested, bounded.</h2></div>
+          <p>Every card opens a detailed case study covering the problem, intended user, system, AI’s role, build process, key decisions, verified evidence, limitations, and next experiment.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all" aria-pressed="true">All systems</button>
+          <button class="filter" data-filter="product" aria-pressed="false">AI products</button>
+          <button class="filter" data-filter="research" aria-pressed="false">Research systems</button>
+          <button class="filter" data-filter="prompt" aria-pressed="false">Prompt systems</button>
+        </div>
+        <div class="projects">
+          <article class="project" data-kind="research"><div class="project-top"><span class="mono">Crypto · Research platform</span><span class="status partial">Edge honestly rejected</span></div><h3><a href="project-crypto-scanner.html">Crypto Scanner <span>↗</span></a></h3><p>A multi-timeframe crypto-futures scanner evolved into an evidence-governed research operating system: signals, outcomes, costs, preregistration, placebo controls, live observation, and dormant execution.</p><div class="evidence"><b>Outcome snapshot · 12 Sep 2026</b><p>22,919 signals · 22,796 resolved · 76 days · all five modeled honest exit policies negative on average</p></div><div class="chips"><span class="chip">Node.js</span><span class="chip">SQLite</span><span class="chip">Statistics</span><span class="chip">WebSockets</span></div></article>
+          <article class="project" data-kind="product"><div class="project-top"><span class="mono">Health · Local-first</span><span class="status">Validated build</span></div><h3><a href="project-nutrition-tracker.html">Nutrition Tracker <span>↗</span></a></h3><p>A deterministic nutrition product that treats AI as an interface—not an authority. Unknown nutrients remain unknown, source provenance stays attached, and local storage keeps the core loop resilient.</p><div class="evidence"><b>Evidence boundary · 15 Sep 2026</b><p>7,996 foods locally · 203 in deployed release · 478 passing tests · clean typecheck</p></div><div class="chips"><span class="chip">Expo</span><span class="chip">SQLite</span><span class="chip">IndexedDB</span><span class="chip">Provenance</span></div></article>
+          <article class="project" data-kind="product"><div class="project-top"><span class="mono">Knowledge · Multimodal</span><span class="status">Built in phases</span></div><h3><a href="project-reelbrain.html">ReelBrain <span>↗</span></a></h3><p>A private knowledge system for turning short-form video into evidence-backed, searchable learning. It separates temporary media from durable knowledge and routes content through adaptive analysis.</p><div class="evidence"><b>Evidence boundary</b><p>React + FastAPI service · append-only synthesis · 377 records backfilled · retention controls</p></div><div class="chips"><span class="chip">OCR / ASR</span><span class="chip">RAG</span><span class="chip">Privacy</span><span class="chip">Adaptive routing</span></div></article>
+          <article class="project" data-kind="research"><div class="project-top"><span class="mono">Markets · Reliability</span><span class="status partial">Measured, not proven</span></div><h3><a href="project-nire.html">NIRE <span>↗</span></a></h3><p>A measurement-first intraday research engine where point-in-time correctness matters more than persuasive backtests. The work spans signal families, data quality, scheduler integrity, audit trails, and production operations.</p><div class="evidence"><b>Evidence boundary</b><p>14 qualifying captured sessions · 70 F2 research trades were negative overall · zero preregistered forward families</p></div><div class="chips"><span class="chip">Azure</span><span class="chip">Parquet</span><span class="chip">Telemetry</span><span class="chip">Research integrity</span></div></article>
+          <article class="project" data-kind="research"><div class="project-top"><span class="mono">Markets · Simulation</span><span class="status">Locally tested</span></div><h3><a href="project-trading-lab.html">Trading Lab <span>↗</span></a></h3><p>A dependency-free simulator designed to expose strategy assumptions: completed-bar signals, next-open execution, whole-unit sizing, fees, slippage, gaps, and holdout evaluation.</p><div class="evidence"><b>Evidence boundary</b><p>13 tests passing · synthetic holdout −1.41% · 2.74% max daily drawdown · execution demo, not profit evidence</p></div><div class="chips"><span class="chip">Python</span><span class="chip">Backtesting</span><span class="chip">Paper ledger</span><span class="chip">Risk modeling</span></div></article>
+          <article class="project" data-kind="product"><div class="project-top"><span class="mono">Career · Local AI</span><span class="status partial">Verified local workflow</span></div><h3><a href="project-placement-copilot.html">Placement Copilot <span>↗</span></a></h3><p>A local-first career intelligence tool that analyzes job descriptions, separates demonstrated strengths from genuine skill gaps, and turns evidence into role-specific positioning.</p><div class="evidence"><b>Evidence boundary · 21 Aug 2026</b><p>493 JDs · 848 backend tests · 301 frontend tests · production print-route build defect remains</p></div><div class="chips"><span class="chip">Ollama</span><span class="chip">Retrieval</span><span class="chip">Skill analysis</span><span class="chip">Career intelligence</span></div></article>
+          <article class="project" data-kind="product"><div class="project-top"><span class="mono">Automation · Agent safety</span><span class="status partial">MVP, compile blocked</span></div><h3><a href="project-shortcuts-copilot.html">Shortcuts Copilot <span>↗</span></a></h3><p>A natural-language-to-Apple-Shortcut planner with provider abstraction, a strict intermediate representation, allowlisted actions, and explicit confirmation for sensitive behavior.</p><div class="evidence"><b>Evidence boundary</b><p>Mock + local Mistral planning verified · deterministic validator built · final Cherri compile/import path pending</p></div><div class="chips"><span class="chip">Agents</span><span class="chip">Ollama</span><span class="chip">Safety gates</span><span class="chip">CLI</span></div></article>
+          <article class="project" data-kind="prompt"><div class="project-top"><span class="mono">Meta-work · Prompt engineering</span><span class="status">Reusable artifacts</span></div><h3><a href="project-ai-operating-protocols.html">AI Operating Protocols <span>↗</span></a></h3><p>A library of model-agnostic systems for research, UI decisions, project handoffs, and plan reviews—designed to preserve truth across tools without forcing unnecessary ceremony.</p><div class="evidence"><b>Evidence boundary</b><p>Research evidence ledger · contradiction search · adaptive handoff · light/deep/red-team review modes</p></div><div class="chips"><span class="chip">Prompt architecture</span><span class="chip">Handoffs</span><span class="chip">Evaluation</span><span class="chip">Model portability</span></div></article>
+          <article class="project" data-kind="product"><div class="project-top"><span class="mono">Procurement · Agentic evaluation</span><span class="status partial">Benchmarked prototype</span></div><h3><a href="project-procurement-agentic-eval.html">Agentic Tender Evaluation <span>↗</span></a></h3><p>A six-stage procurement pipeline for evidence-linked extraction, deterministic compliance, weighted scoring, risk review, ranking, and human escalation.</p><div class="evidence"><b>Mixed-evidence benchmark · inspected 23 Sep 2026</b><p>206 synthetic bids on 40 real tender skeletons · 0.92 top-1 award match · 31% escalated for review</p></div><div class="chips"><span class="chip">Agents</span><span class="chip">Pydantic</span><span class="chip">Streamlit</span><span class="chip">Ablations</span></div></article>
+          <article class="project" data-kind="product"><div class="project-top"><span class="mono">Payments · Product architecture</span><span class="status partial">Scaffold only</span></div><h3><a href="project-ai-payments-operations.html">AI Payments Operations <span>↗</span></a></h3><p>A planned ISO 20022 operations control tower for lifecycle analytics, exception clustering, and grounded investigation—with the current build state kept explicit.</p><div class="evidence"><b>Current-state boundary · 23 Sep 2026</b><p>0 implemented phases · pacs.008 / pacs.002 planned · ML anomaly detection deferred</p></div><div class="chips"><span class="chip">ISO 20022</span><span class="chip">RAG design</span><span class="chip">Evaluation</span><span class="chip">Payments</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="shell">
+        <div class="section-head">
+          <div><div class="eyebrow mono">Professional achievements</div><h2>Impact at<br>Goldman Sachs.</h2></div>
+          <p>Before building my own AI products, I spent six years working across financial operations, analytics, engineering, and automation. One moment early in that journey shaped how I think about all of them.</p>
+        </div>
+        <div class="story-feature">
+          <div>
+            <div class="mono story-label">September 2019 · Bengaluru</div>
+            <h3>Two transactions.<br>A $5.4 million consequence.</h3>
+            <p>Early in my career at Goldman Sachs, I spotted transactions that did not add up and raised the concern internally. The escalation helped uncover a $5.4 million fraud. The funds were subsequently recovered through coordinated action by the firm, banks, and authorities.</p>
+            <p>The technical control mattered. So did being willing to ask an uncomfortable question as a junior employee. That experience still informs how I build: look closely, investigate anomalies, and make it possible for someone to challenge the result.</p>
+            <a class="button primary" href="story-goldman-sachs.html">Read the story &amp; coverage</a>
+          </div>
+          <aside class="story-aside">
+            <div class="mono">Analytics · Automation · Leadership</div>
+            <h3>From operational tools to global delivery.</h3>
+            <dl class="career-results"><div><dt>1,600+ hours / year</dt><dd>Saved through 20+ tools and 15+ automations for global teams.</dd></div><div><dt>$600K+ in savings</dt><dd>Delivered while prioritising initiatives across a roughly $70M portfolio.</dd></div><div><dt>11 → 26 people</dt><dd>Led a growing global data team across three pillars.</dd></div></dl>
+            <p class="source-note">Career results from my resume. Recognition includes an individual Risk Management Award, a team runner-up, and a Regional Client Service Award.</p>
+          </aside>
+        </div>
+        <div class="press-strip" aria-label="Reporting on the incident">
+          <span class="mono">Reported by</span>
+          <a href="https://www.livemint.com/companies/people/goldman-sachs-top-executive-charged-with-fraud-1568126399747.html" target="_blank" rel="noopener noreferrer">Mint ↗</a>
+          <a href="https://timesofindia.indiatimes.com/city/bengaluru/bengaluru-goldman-sachs-poker-addict-vice-president-his-aide-arrested-for-fraud/articleshow/71073330.cms" target="_blank" rel="noopener noreferrer">The Times of India ↗</a>
+          <a href="https://indianexpress.com/article/india/goldman-sachs-senior-executive-held-for-swindling-firm-of-rs-38-cr-say-bengaluru-police-5984111/" target="_blank" rel="noopener noreferrer">The Indian Express ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="method">
+      <div class="shell">
+        <div class="section-head"><div><div class="eyebrow mono">Method</div><h2>Speed is a tool.<br>Thinking is the work.</h2></div><p>“Vibe coding” is powerful when it accelerates feedback. It becomes dangerous when fast output is mistaken for understanding. My workflow keeps momentum while making the important assumptions inspectable.</p></div>
+        <div class="method">
+          <article class="step"><span class="mono">01 / Frame</span><h3>Find the real decision</h3><p>Define the user, the job, and the claim the system must eventually earn.</p></article>
+          <article class="step"><span class="mono">02 / Model</span><h3>Make thinking explicit</h3><p>Use prompts, constraints, and system boundaries to turn ambiguity into a testable design.</p></article>
+          <article class="step"><span class="mono">03 / Build</span><h3>Create the smallest real loop</h3><p>Ship the core behavior early enough that reality—not imagination—can shape the next step.</p></article>
+          <article class="step"><span class="mono">04 / Challenge</span><h3>Separate proof from promise</h3><p>Test failure modes and label what is verified, inferred, proposed, or still unknown.</p></article>
+        </div>
+        <p class="method-reflection"><span class="mono">The person behind the process</span>I learn by doing, stay curious about unfamiliar people and domains, and turn an overthinking mind into edge-case planning. The aim is not just better software; it is better judgment.</p>
+      </div>
+    </section>
+
+    <section id="beyond" class="personal-section">
+      <div class="shell">
+        <details class="secondary-details"><summary>A little more about me, off the clock</summary>
+        <p class="personal-intro">A few things you would learn over a long conversation, a street-food stop, or an unplanned trip. For an unexpected moment from my career, <a href="story-goldman-sachs.html">read about the call from David Solomon and the Tomorrowland invitation</a>.</p>
+        <div class="personal-grid">
+          <article><span class="mono">01 / Detours</span><h3>A Vespa and an open road.</h3><p>I once took an impromptu solo Vespa trip covering 700 miles to a beach town. I love the freedom of travelling alone—and coming back with stories to share.</p></article>
+          <article><span class="mono">02 / People</span><h3>People are the destination.</h3><p>Ask me mountains or beaches and I’ll probably say people. I’m fascinated by how different cultures find joy in everyday life.</p></article>
+          <article><span class="mono">03 / Soundtrack</span><h3>Good beats. Better moods.</h3><p>I gravitate towards upbeat music. Sitcoms are another constant: they have taught me a surprising amount about meeting difficult situations with humour.</p></article>
+          <article><span class="mono">04 / First byline</span><h3>The food review came first.</h3><p>Long before the Goldman Sachs coverage, I had a restaurant review published as a child. My enthusiasm for street food has survived intact.</p></article>
+          <article><span class="mono">05 / First pay</span><h3>Three phones. One happy family.</h3><p>With my first internship salary, I bought phones for my mother, father, and brother. Giving back to the people who helped me get started is still one of my favourite feelings.</p></article>
+          <article><span class="mono">06 / Small gestures</span><h3>Some things deserve handwriting.</h3><p>I love writing physical letters to people I care about. There is something about taking the time to put your thoughts on paper that a quick message cannot replace.</p></article>
+        </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="shell">
+        <p class="belief">I’m interested in AI that makes us <span>more capable, not more dependent</span>—technically sharper, financially more rigorous, and healthier in everyday life, without outsourcing judgment to a fluent answer.</p>
+        <div class="footer-grid" style="margin-top:70px">
+          <div><div class="eyebrow mono">Current direction</div><p>Building evidence-led AI products across technical capability, financial reasoning, and personal health—using prompt architecture, local AI, provenance, product design, and operational reliability.</p></div>
+          <div class="footnote"><span class="mono">A useful collaboration</span><p>Bring an ambiguous, high-leverage problem. I’ll help turn it into a system we can understand, test, and improve.</p></div>
+        </div>
+        <div class="copyright"><span>© 2026 Gaurav Mishra</span><span>Built as a living record of the work.</span></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const filters = document.querySelectorAll('.filter');
+    const projects = document.querySelectorAll('.project');
+    filters.forEach(button => button.addEventListener('click', () => {
+      filters.forEach(item => { item.classList.remove('active'); item.setAttribute('aria-pressed','false'); });
+      button.classList.add('active'); button.setAttribute('aria-pressed','true');
+      const selected = button.dataset.filter;
+      projects.forEach(project => project.hidden = selected !== 'all' && project.dataset.kind !== selected);
+    }));
+  </script>
+</body>
+</html>
